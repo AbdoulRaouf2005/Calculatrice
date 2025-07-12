@@ -4,6 +4,8 @@ var Restauration = document.querySelectorAll('.rest');
 var princi = document.getElementById('Interface');
 var Reponse = document.getElementById('reponse');
 var auto = true;
+var Egal = document.querySelector('.Egal');
+
 for(let i = 0 ; i < Elements.length ; i++){
       Elements[i].addEventListener('click',() => {
             const touches = Elements[i].innerHTML;
@@ -30,7 +32,7 @@ Restauration[1].addEventListener('click', () => {
       princi.innerHTML = "";
       Reponse.innerHTML ='0';
 });
-Operateur[4].addEventListener('click', () =>{
+Egal.addEventListener('click', () =>{
       var acces = princi.innerHTML;
-      Reponse.innerHTML = eval(acces);
+      Reponse.innerHTML = eval(acces)
 });
